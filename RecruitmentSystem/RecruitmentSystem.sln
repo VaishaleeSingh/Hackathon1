@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitmentSystem.API", "RecruitmentSystem.API\RecruitmentSystem.API.csproj", "{3A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitmentSystem.Application", "RecruitmentSystem.Application\RecruitmentSystem.Application.csproj", "{4A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitmentSystem.Domain", "RecruitmentSystem.Domain\RecruitmentSystem.Domain.csproj", "{5A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitmentSystem.Infrastructure", "RecruitmentSystem.Infrastructure\RecruitmentSystem.Infrastructure.csproj", "{6A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitmentSystem.Shared", "RecruitmentSystem.Shared\RecruitmentSystem.Shared.csproj", "{7A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0F494C-3B9B-4B9F-8CA1-85A5B5A5B5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

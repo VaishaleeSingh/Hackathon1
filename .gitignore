@@ -1,0 +1,22 @@
+# .gitignore for .NET and Angular
+
+# .NET
+[Bb]in/
+[Oo]bj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Angular
+node_modules/
+dist/
+.angular/
+.DS_Store
+
+# User-specific
+.env
+appsettings.Development.json
+*.log
