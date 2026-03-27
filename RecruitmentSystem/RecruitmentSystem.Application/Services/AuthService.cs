@@ -47,10 +47,15 @@ public class AuthService : IAuthService
         };
     }
 
-    public async Task<bool> RegisterAsync(RegisterRequest request)
+    public async Task<AuthResponse?> RegisterAsync(RegisterRequest request)
     {
         var existingUsers = await _unitOfWork.Users.FindAsync(u => u.Email == request.Email);
-        if (existingUsers.Any()) return false;
+        if (existingUsers.Any()) return null;
+
+        if (request.RoleId <= 0)
+        {
+            request.RoleId = 3; // Default to Candidate
+        }
 
         var user = _mapper.Map<User>(request);
         user.PasswordHash = HashPassword(request.Password);
@@ -64,7 +69,17 @@ public class AuthService : IAuthService
             await _unitOfWork.CompleteAsync();
         }
 
-        return true;
+        var roles = await _unitOfWork.Roles.FindAsync(r => r.Id == user.RoleId);
+        var role = roles.FirstOrDefault()?.Name ?? "Candidate";
+
+        var token = GenerateJwtToken(user, role);
+
+        return new AuthResponse
+        {
+            Token = token,
+            Username = user.Username,
+            Role = role
+        };
     }
 
     private string GenerateJwtToken(User user, string role)

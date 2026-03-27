@@ -26,8 +26,8 @@ public class AuthController : ControllerBase
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var result = await _authService.RegisterAsync(request);
-        if (!result) return BadRequest("Email already exists");
-        return Ok("Registration successful");
+        var response = await _authService.RegisterAsync(request);
+        if (response == null) return BadRequest("Email already exists");
+        return Ok(response);
     }
 }

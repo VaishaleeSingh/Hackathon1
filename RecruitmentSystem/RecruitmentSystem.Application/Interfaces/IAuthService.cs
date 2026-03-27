@@ -5,5 +5,5 @@ namespace RecruitmentSystem.Application.Interfaces;
 public interface IAuthService
 {
     Task<AuthResponse?> LoginAsync(LoginRequest request);
-    Task<bool> RegisterAsync(RegisterRequest request);
+    Task<AuthResponse?> RegisterAsync(RegisterRequest request);
 }
